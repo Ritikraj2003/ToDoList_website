@@ -1,0 +1,68 @@
+<head>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .user-data {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    
+    </style>
+    </head>
+    <body>
+    
+    <div class="container">
+      <div class="user-data">User_Data</div>
+      <button mat-raised-button  style="background-color: #829f19; color: #100202"  routerLink="/users/add" >Add User</button>
+    </div>
+    
+    </body>
+
+
+<div class="shadow p-4 border">
+    
+
+<table class="w-full">
+    <thead>
+        <tr>
+            <th>Assigned</th>
+            <th>Status</th>
+            <th>Due_date</th>
+            <th> Priority</th>
+            <th>Comments</th>
+            <th>Action</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        @for (User of users; track $index) {
+            <tr>
+                <td>{{User.Assigned}}</td>
+                <td>{{User.Status}}</td>
+                <td>{{User.Due_date}}</td>
+                <td>{{User. Priority}}</td>
+                <td>{{User.Comments}}</td>
+                <td>
+                    <button mat-raised-button style="background-color: #145954; color: #191818;" [routerLink]="'/users/'+ User._id">
+                        Edit
+                    </button>
+                    <button mat-raised-button style="background-color: #ef1013; color: #181515;"(click)="delete(User._id!)">Delete</button>
+                </td>
+
+            </tr>  
+        }
+    </tbody>
+</table>
+</div>

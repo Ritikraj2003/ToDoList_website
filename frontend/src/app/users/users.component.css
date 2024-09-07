@@ -1,0 +1,71 @@
+table{
+    background-color: rgb(195, 234, 221);
+    width:100;
+    tr {
+        width:  100 ;
+    }
+    th,
+    td{
+        padding: 1rem;
+        border: 1px solid rgb(116, 113, 113);
+    }
+}
+
+.shadow {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .border {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .w-full {
+text-align: center;
+    width: 100%;
+  }
+  
+  thead th {
+    background-color: chocolate;
+    color: #333;
+    padding: 0.75rem;
+  }
+  
+  tbody td {
+   
+    padding: 0.75rem;
+  }
+  
+  button.mat-raised-button {
+    
+    margin-right: 4px;
+  }
+  
+  button.mat-raised-button[color="accent"] {
+    background-color: #d2199b;
+    color: #fff;
+  }
+  
+ 
+
+

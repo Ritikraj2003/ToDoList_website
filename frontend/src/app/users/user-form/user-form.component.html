@@ -1,0 +1,44 @@
+<div class="shadow border-form">
+    @if (editUserId) {
+        <h2 class="text-xl font-semibold" style="color: #a9ee21; text-align: center; font-weight: bold;">Update user</h2>
+    }
+    @else {
+        <h2 class="text-xl font-semibold" style="color: #0d853d; text-align: center; font-weight: bold;">Add user</h2>
+    }
+    
+<form [formGroup]="userForm">
+    <div class="flex> flex-wrap">
+
+        <mat-form-field class="w-full">
+            <mat-label>Assigned</mat-label>
+            <input type="text" matInput formControlName="Assigned"/>
+           </mat-form-field>
+         <mat-form-field class="w-full">
+            <mat-label>Status</mat-label>
+            <input type="text" matInput formControlName="Status"/>
+           </mat-form-field>
+           <mat-form-field class="w-full">
+            <mat-label>Due_date</mat-label>
+            <input type="date" matInput formControlName="Due_date"/>
+           </mat-form-field>
+           <mat-form-field class="w-full">
+            <mat-label> Priority</mat-label>
+            <input type="text" matInput formControlName="Priority"/>
+           </mat-form-field>
+           <mat-form-field class="w-full">
+            <mat-label>Comments</mat-label>
+            <input type="text" matInput formControlName="Comments"/>
+           </mat-form-field>
+    </div>
+    <div class="flex justify-center">
+        @if (editUserId) {
+            <button mat-raised-button style="background-color: #5ebd15; color: #100202" (click)="UpdateUser()">Update </button>
+        }
+        @else {
+            <button mat-raised-button style="background-color: #7adf1c; color: #100202"  (click)="addUser()">Add </button>
+        }
+        
+        
+    </div>
+</form>
+</div>

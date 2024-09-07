@@ -1,0 +1,16 @@
+.flex {
+    display: flex;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+.mat-toolbar span {
+    color: #1500ff; /* You can use any color code or color name you prefer */
+    font-weight: bold;
+     text-align: center;
+    
+  }
+
+  
